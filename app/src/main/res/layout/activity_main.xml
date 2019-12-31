@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="false"
     android:orientation="vertical"
     android:padding="10dp"
-    android:fillViewport="false"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -30,8 +30,8 @@
             android:id="@+id/buttonListen2"
             style="@android:style/Widget.Button"
             android:layout_width="match_parent"
-            android:layout_marginTop="5dp"
             android:layout_height="61dp"
+            android:layout_marginTop="5dp"
             android:layout_weight="3.31"
             android:onClick="listenWebSearch"
             android:padding="8dp"
@@ -41,22 +41,34 @@
             android:id="@+id/buttonListen3"
             style="@android:style/Widget.Button"
             android:layout_width="match_parent"
-            android:layout_marginTop="5dp"
             android:layout_height="61dp"
+            android:layout_marginTop="5dp"
             android:layout_weight="3.31"
+            android:onClick="listenHeadless"
             android:padding="8dp"
             android:text="Embedded Speech Recognition" />
 
-    <TextView
-        android:id="@+id/textResult"
-        android:layout_width="match_parent"
-        android:layout_height="111dp"
-        android:layout_margin="4dp"
-        android:layout_weight="0.5"
-        android:padding="4dp"
-        android:text="Nothing said yet."
-        android:textSize="12sp"
-        android:typeface="monospace" />
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:layout_margin="4dp"
+            android:layout_weight="0.5"
+            android:padding="4dp"
+            android:text="Nothing said yet."
+            android:textSize="12sp"
+            android:typeface="monospace" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/textFlight"
+            android:layout_width="match_parent"
+            android:layout_height="295dp"
+            android:layout_margin="4dp"
+            android:layout_weight="0.5"
+            android:padding="4dp"
+            android:text="No flight data yet."
+            android:textSize="12sp"
+            android:typeface="monospace" />
+
+    </LinearLayout>
 </ScrollView>
